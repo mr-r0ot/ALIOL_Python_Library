@@ -15,15 +15,35 @@ if not E in G():
 import ALIOL
 ```
 
-
-
-# Commands
+# Run Codes And Convert Codes By AI (need to internet)
 ```
-run_ruby(code)
-run_php(code)
-run_java(code)
-run_js(code)
-runALIOL.run_ruby(code)
+---> More powerful but less speed and more restrictions
+
+
+Converting:
+	ALIOL.Convert_languages_code_AI(input_language,output_language,code,log=False)
+    Exam:
+	output=ALIOL.Convert_languages_code_AI('python','php',code='print("Hello World!")'    ,log=True)
+	print(output)
+
+
+
+Running:
+	ALIOL.Run_languages_code_AI(language,code,log=False)
+    Exam(running ruby code):
+	ALIOL.Run_languages_code_AI('ruby',code='puts "hello"',    log=True)
+
+
+```
+
+
+
+# Run Codes And Convert Codes By Mechanical conversion (not need to internet)
+```
+---> Less power but more speed and less restrictions
+
+
+ALIOL.run_ruby(code)
 ALIOL.run_php(code)
 ALIOL.run_java(code)
 ALIOL.run_js(code)
@@ -41,19 +61,6 @@ ALIOL.convert_html_to_py(code,geometry="400x400")
 ALIOL.convert_py_to_html(code,lang='en',title)
 ALIOL.convert_c_to_python(code)
 ALIOL.convert_py_to_c(code)_python(code)
-run_c(code)
-run_html(code,geometry="400x400")
-
-
-convert_ruby_to_py(code)
-convert_php_to_py(code)
-convert_py_to_java(code)
-convert_py_to_js(code)
-convert_js_to_py(code)
-convert_html_to_py(code,geometry="400x400")
-convert_py_to_html(code,lang='en',title)
-convert_c_to_python(code)
-convert_py_to_c(code)
 ```
 
 

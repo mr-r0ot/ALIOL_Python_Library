@@ -190,7 +190,7 @@ def Convert_languages_code_AI(input_language,output_language,code,log=False):
 			try:exec(f"import {l}")
 			except:print(f"Please Install {l}");sysexit()
 	from selenium import webdriver;from selenium.webdriver.common.by import By;from time import sleep;from sys import exit as sysexit;from selenium.webdriver.firefox.options import Options as firefox_option_driver;firefox_option=firefox_option_driver();firefox_option.add_argument(_D);from selenium.webdriver.edge.options import Options as edge_option_driver;edge_option=edge_option_driver();edge_option.add_argument(_D);from selenium.webdriver.ie.options import Options as ie_option_driver;ie_option=ie_option_driver();ie_option.add_argument(_D);from selenium.webdriver.chrome.options import Options as chrome_option_driver;chrome_option=chrome_option_driver();chrome_option.add_argument(_D)
-	try:driver=webdriver.Firefox()
+	try:driver=webdriver.Firefox(firefox_option)
 	except:
 		try:driver=webdriver.Edge(edge_option)
 		except:

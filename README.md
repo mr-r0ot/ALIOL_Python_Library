@@ -11,8 +11,7 @@ if not E in G():
 		C=get('https://mr-r0ot.github.io/ALIOL_Python_Library/ALIOL.py')
 		if C.status_code!=200:A('GiHub Error!');B()
 	except:A('NetWork Error!');B()
-	D=open(E,'w+');D.write(C.text);D.close()
-from ALIOL import ALIOL
+import ALIOL
 ```
 
 # Run Codes And Convert Codes By AI (need to internet)
